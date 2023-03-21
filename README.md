@@ -30,4 +30,4 @@ To put the MyAir Lite board into deep sleep mode, press the reset button on the 
 <h3>Product</h3>
 
 <h2>License</h2>
-This program is licensed under the MIT License. See the [LICENSE] file for details.
+This program is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
