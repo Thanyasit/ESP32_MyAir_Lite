@@ -1,6 +1,6 @@
 <h1>MyAir Lite</h1>
 <h2>Description</h2>
-This is a simple Arduino program for MyAir Lite that uses the Adafruit BME280 and Plantower PMS5003 sensors to measure temperature, humidity, and air quality (PM2.5) and display the result on LED lights. The program also sends the data over Bluetooth using the BluetoothSerial library.
+This is a program for MyAir Lite that uses the Adafruit BME280 and Plantower PMS5003 sensors to measure temperature, humidity, and air quality (PM2.5) and display the result on LED lights. The program also sends the data over Bluetooth using the BluetoothSerial library.
 <h2>Prerequisites</h2>
 Before using this program, make sure you have the following libraries installed:<br><br>  
 
