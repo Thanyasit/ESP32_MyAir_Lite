@@ -1,34 +1,26 @@
 <h1>MyAir Lite</h1>
 <h2>Description</h2>
-This is a simple air quality monitor that measures the concentration of PM2.5 particles in the air using an ESP32 and an SPS30 sensor. The device calculates the Air Quality Index (AQI) based on the concentration of PM2.5 particles in the air and sends the data via Bluetooth. The device also features a single LED light that changes color based on the air quality.
-<h2>Getting Started</h2>
-<h3>Prerequisites</h3>
-Arduino IDE
-ESP32 board libraries for Arduino IDE
-FastLED library
-sensirion_uart library
-sps30 library
-<h3>Installation</h3>
-Clone this repository.
-Connect the ESP32 to your computer using a USB cable.
-Open the Air_Quality_Monitor.ino file in Arduino IDE.
-Go to Tools > Board and select your ESP32 board.
-Install the required libraries using Sketch > Include Libraries > Manage Libraries.
-Upload the code to your ESP32 by clicking Sketch > Upload.
+This is a simple Arduino program for MyAir Lite that uses the Adafruit BME280 and Plantower PMS5003 sensors to measure temperature, humidity, and air quality (PM2.5) and display the result on LED lights. The program also sends the data over Bluetooth using the BluetoothSerial library.
+<h2>Prerequisites</h2>
+Before using this program, make sure you have the following libraries installed:<br><br>  
+
+
+Wire.h<br> 
+SPI.h<br> 
+Adafruit_Sensor.h<br> 
+Adafruit_BME280.h<br> 
+PMS.h<br> 
+BluetoothSerial.h<br> 
+<h2>Set up</h2>
+1.Connect the BME280 sensor and PMS5003 sensor to the appropriate pins on the MyAir Lite board.<br> 
+2.Upload the program to the MyAir Lite board using the Arduino IDE.<br> 
+3.Pair your Bluetooth device with the MyAir Lite board. The device name is "MyAir_Lite".<br> 
+4.Turn on the MyAir Lite board.
 <h2>Usage</h2>
-Power on the ESP32.
-The LED light will turn on for 0.5 seconds and then turn off.
-The device will start measuring the concentration of PM2.5 particles in the air and display the value in the Arduino Serial Monitor.
-The device will then calculate the AQI based on the PM2.5 concentration and display the AQI level in the Arduino Serial Monitor.
-The device will send the AQI level via Bluetooth to a device named "MyAir_Case".
-The LED light will change color based on the AQI level:
-Green: AQI level 0-50
-Yellow: AQI level 51-100
-Orange: AQI level 101-150
-Red: AQI level 151-200
-Purple: AQI level 201-300
-Brown: AQI level 301-500
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+The MyAir Lite board will display the air quality level on the LED lights. If the air quality is good (PM2.5 <= 10), the first LED will turn on. If the air quality is moderate (10 < PM2.5 <= 20), the first two LEDs will turn on. If the air quality is unhealthy (20 < PM2.5 <= 37), the first three LEDs will turn on. If the air quality is very unhealthy (37 < PM2.5 <= 50), the first four LEDs will turn on. If the air quality is hazardous (50 < PM2.5 <= 90), the first five LEDs will turn on. If the air quality is very hazardous (PM2.5 > 90), all six LEDs will turn on.<br> <br> 
+
+The program will also send the temperature, humidity, and PM2.5 data over Bluetooth every three seconds.
+
+To put the MyAir Lite board into deep sleep mode, press the reset button on the board or connect the <b>'EN'</b> pin to the <b>'RST'</b>  pin using a jumper wire. The board will wake up every three minutes to take new measurements.
 <h2>License</h2>
-This project is licensed under the MIT License - see the LICENSE file for details3
+This program is licensed under the MIT License. See the LICENSE file for details.
