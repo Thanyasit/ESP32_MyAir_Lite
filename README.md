@@ -23,4 +23,4 @@ The program will also send the temperature, humidity, and PM2.5 data over Blueto
 
 To put the MyAir Lite board into deep sleep mode, press the reset button on the board or connect the <b>'EN'</b> pin to the <b>'RST'</b>  pin using a jumper wire. The board will wake up every three minutes to take new measurements.
 <h2>License</h2>
-This program is licensed under the MIT License. See the [LICENSE](https://github.com/Thanyasit/MyAir_Lite/blob/main/LICENSE) file for details.
+This program is licensed under the MIT License. See the LICENSE file for details.
