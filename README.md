@@ -4,12 +4,12 @@ This is a arduino program for MyAir Lite that uses the Adafruit BME280 and Plant
 <h2>Prerequisites</h2>
 Before using this program, make sure you have the following libraries installed:<br><br>  
 
-- Wire.h included with Arduino IDE<br> 
-- SPI.h included with Arduino IDE<br> 
-- Adafruit_Sensor.h install from the Arduino Library Manager<br> 
-- Adafruit_BME280.h install from the Arduino Library Manager<br> 
-- PMS.h install from the Arduino Library Manager<br> 
-- BluetoothSerial.h install from the Arduino Library Manager<br> 
+- Wire.h - included with Arduino IDE<br> 
+- SPI.h - included with Arduino IDE<br> 
+- Adafruit_Sensor.h - install from the Arduino Library Manager<br> 
+- Adafruit_BME280.h - install from the Arduino Library Manager<br> 
+- PMS.h - install from the Arduino Library Manager<br> 
+- BluetoothSerial.h - install from the Arduino Library Manager<br> 
 <h2>Set up</h2>
 1.Connect the BME280 sensor and PMS5003 sensor to the appropriate pins on the MyAir Lite board.<br> 
 2.Upload the program to the MyAir Lite board using the Arduino IDE.<br> 
