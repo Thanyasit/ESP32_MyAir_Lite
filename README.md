@@ -23,16 +23,11 @@ The program will also send the temperature, humidity, and PM2.5 data over Blueto
 
 To put the MyAir Lite board into deep sleep mode, press the reset button on the board or connect the <b>'EN'</b> pin to the <b>'RST'</b>  pin using a jumper wire. The board will wake up every three minutes to take new measurements.
 
-<h3>PCB Design</h3>
-
-<h3>Basic Appication</h3>
-
 ## Product
 
 Video [MyAir_Lite](https://www.youtube.com/watch?v=E1o8Nbw4r-A)
-<p align="center">
-<img src="https://user-images.githubusercontent.com/77733903/226972344-508e7dc5-2040-444f-9e97-039f4f5760fb.PNG" width="485"><img src="https://user-images.githubusercontent.com/77733903/226973332-d8c43c70-a42c-454f-8162-25644a0f917a.PNG" width="500">
-</p>
+<p align="center"><img src="https://user-images.githubusercontent.com/77733903/226972344-508e7dc5-2040-444f-9e97-039f4f5760fb.PNG" width="485"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/77733903/227078168-8d6a87a0-3823-42c5-a9db-c395fb37253c.jpg" width="500"><img src="https://user-images.githubusercontent.com/77733903/227078179-e037bf12-e96e-4b95-b7cd-77353e2ca187.jpg" width="500"></p>
 
 
 
